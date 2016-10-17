@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "Twitter Timeline Personality Analyzation using IBMs WATSON AI algorithims",
   "main": "app.js",
-  "dependencies": {},
+  "dependencies": {
+    "browserfy": "1.0.0",
+    "browserify": "13.1.0"
+  },
   "devDependencies": {
     "angular": "1.5.8",
+    "bootstrap": "3.3.7",
     "fs": "0.0.1-security",
     "node-twitter": "0.5.3",
     "watson-developer-cloud": "2.6.0"
