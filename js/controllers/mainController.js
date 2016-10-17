@@ -18,7 +18,7 @@ var twitterRestClient = new twitter.RestClient(
   'vgiJdK1CRsiFx7Fbc7prJZ6LziMwCaIQ7tWLmnevAnEcS'
 );
 
-app.controller('mainController', ['$scope', function($scope) {
+app.controller('mainController1', ['$scope', function($scope) {
   twitterRestClient.statusesHomeTimeline({}, function(error, result) {
     if (error)
     {
