@@ -31,19 +31,20 @@ twitterRestClient.statusesHomeTimeline({}, function(error, result) {
       text: result,
       consumption_preferences: true,
       csv_headers: true,
-      headers: {'Accept': 'text/csv'}
-      },
-      function (err, response) {
-        if (err)
-        {
-          console.log('error', err);
-        }
+      headers: {
+        'Accept': 'text/csv',
+      }
+    },
+    function (err, response) {
+      if (err)
+      {
+        console.log('error', err);
+      }
 
-        else
-        {
-          console.log(JSON.stringify(response, null, 2));
-        }
-
+      else
+      {
+        console.log(JSON.stringify(response, null, 2));
+      }
     }).pipe(fs.createWriteStream('./output.csv'));
   }
 });
